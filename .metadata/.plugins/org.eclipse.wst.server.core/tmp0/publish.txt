@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Mon Jan 21 02:06:20 IST 2019
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\DELL\\Desktop\\ltiprojrct\\UHLfinal\\DemoSpringMVC2\\WebContent\\WEB-INF\\lib\\spring-web-4.1.6.RELEASE.jar=WEB-INF/lib/spring-web-4.1.6.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\DELL\\Desktop\\ltiprojrct\\all\ jars\\all\ jars\\spring-web-4.0.3.RELEASE.jar=WEB-INF/lib/spring-web-4.0.3.RELEASE.jar

@@ -1,0 +1,96 @@
+package com.lti.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+@Table
+public class LoanDetails {
+
+	
+	//No sequence created in sql
+	@Id 
+	@GeneratedValue(generator = "loan_sequence", strategy = GenerationType.SEQUENCE)
+	@SequenceGenerator(name = "loan_sequence", sequenceName = "loan_sequence")
+	private int loanId;
+	
+	
+	//should be fixed
+	@Column
+	private double maxAmount;
+	
+	@Column
+	private float interestRate;
+	
+	@Column
+	private float tenure;
+	
+	@Column
+	private double loanAmount;
+
+	public int getLoanId() {
+		return loanId;
+	}
+
+	public void setLoanId(int loanId) {
+		this.loanId = loanId;
+	}
+
+	public double getMaxAmount() {
+		return maxAmount;
+	}
+
+	public void setMaxAmount(double maxAmount) {
+		this.maxAmount = maxAmount;
+	}
+
+	public float getInterestRate() {
+		return interestRate;
+	}
+
+	public void setInterestRate(float interestRate) {
+		this.interestRate = interestRate;
+	}
+
+	public float getTenure() {
+		return tenure;
+	}
+
+	public void setTenure(float tenure) {
+		this.tenure = tenure;
+	}
+	public double getLoanAmount() {
+		return loanAmount;
+	}
+
+	public void setLoanAmount(double loanAmount) {
+		this.loanAmount = loanAmount;
+	}
+
+	@Override
+	public String toString() {
+		return "LoanDetails [loanId=" + loanId + ", maxAmount=" + maxAmount + ", interestRate=" + interestRate
+				+ ", tenure=" + tenure + ", loanAmount=" + loanAmount + "]";
+	}
+
+	public LoanDetails(int loanId, double maxAmount, float interestRate, float tenure, double loanAmount) {
+		super();
+		this.loanId = loanId;
+		this.maxAmount = maxAmount;
+		this.interestRate = interestRate;
+		this.tenure = tenure;
+		this.loanAmount = loanAmount;
+	}
+
+	public LoanDetails() {
+		super();
+	}
+	
+	
+	
+}

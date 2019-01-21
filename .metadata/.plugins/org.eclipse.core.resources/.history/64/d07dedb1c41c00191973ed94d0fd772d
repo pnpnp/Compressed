@@ -1,0 +1,76 @@
+package com.lti.model;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+@Table
+public class AccountDetails {
+
+	
+	/*@GeneratedValue(generator = "account_sequence", strategy = GenerationType.SEQUENCE)*/
+	@Id
+	private int accountId;
+	
+	@OneToOne(cascade=CascadeType.ALL)
+	private Customer customer;
+	
+	@Column
+	private double balance=0.0;
+	
+	
+	@Column
+	private String accountType;
+	
+
+	public String getAccountType() {
+		return accountType;
+	}
+
+	public void setAccountType(String accountType) {
+		this.accountType = accountType;
+	}
+
+	public int getAccountId() {
+		return accountId;
+	}
+
+	public void setAccountId(int accountId) {
+		this.accountId = accountId;
+	}
+
+	public double getBalance() {
+		return balance;
+	}
+
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+
+	@Override
+	public String toString() {
+		return "AccountDetails [accountId=" + accountId + ", balance=" + balance + "]";
+	}
+
+	public AccountDetails(int accountId, double balance) {
+		super();
+		this.accountId = accountId;
+		this.balance = balance;
+	}
+
+	public AccountDetails() {
+		super();
+	}
+	
+	
+	
+	
+}

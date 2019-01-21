@@ -1,0 +1,669 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>United Home Loans</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="" name="keywords">
+<meta content="" name="description">
+
+<!-- Favicons -->
+<link
+	href="${pageContext.request.contextPath}/resources/img/favicon.png"
+	rel="icon">
+<link
+	href="${pageContext.request.contextPath}/resources/img/apple-touch-icon.png"
+	rel="apple-touch-icon">
+
+<!-- Google Fonts -->
+<link
+	href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+	rel="stylesheet">
+
+<!-- Bootstrap CSS File -->
+<link
+	href="${pageContext.request.contextPath}/resources/lib/bootstrap/css/bootstrap.min.css"
+	rel="stylesheet">
+
+<!-- Libraries CSS Files -->
+<link
+	href="${pageContext.request.contextPath}/resources/lib/font-awesome/css/font-awesome.min.css"
+	rel="stylesheet">
+<link
+	href="${pageContext.request.contextPath}/resources/lib/animate/animate.min.css"
+	rel="stylesheet">
+<link
+	href="${pageContext.request.contextPath}/resources/lib/ionicons/css/ionicons.min.css"
+	rel="stylesheet">
+<link
+	href="${pageContext.request.contextPath}/resources/lib/owlcarousel/assets/owl.carousel.min.css"
+	rel="stylesheet">
+<link
+	href="${pageContext.request.contextPath}/resources/lib/lightbox/css/lightbox.min.css"
+	rel="stylesheet">
+
+<!-- Main Stylesheet File -->
+<link href="${pageContext.request.contextPath}/resources/css/style.css"
+	rel="stylesheet">
+
+
+</head>
+
+<body>
+
+	<!--==========================
+    Header
+  ============================-->
+	<header id="header">
+		<div class="container-fluid">
+
+			<div id="logo" class="pull-left">
+				<h1>
+					<a href="index.jsp" class="scrollto">United Home Loans</a>
+				</h1>
+				<!-- Uncomment below if you prefer to use an image logo -->
+				<!--         <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>
+ -->
+			</div>
+
+			<nav id="nav-menu-container">
+				<ul class="nav-menu">
+					<li class="menu-active"><a href="#intro">Home</a></li>
+					<li><a href="calculators">Calculators</a></li>
+					<li><a href="aboutus">About Us</a></li>
+					<li><a href="faq">FAQ</a></li>
+					<li><a href="login">Login</a></li>
+
+				</ul>
+			</nav>
+			<!-- #nav-menu-container -->
+		</div>
+	</header>
+	<!-- #header -->
+
+	<!--==========================
+    Intro Section
+  ============================-->
+	<section id="intro">
+		<div class="intro-container">
+			<div id="introCarousel" class="carousel  slide carousel-fade"
+				data-ride="carousel">
+
+				<ol class="carousel-indicators"></ol>
+
+				<div class="carousel-inner" role="listbox">
+
+					<div class="carousel-item active">
+						<div class="carousel-background">
+							<img
+								src="${pageContext.request.contextPath}/resources/img/intro-carousel/1.jpg"
+								alt="">
+						</div>
+						<div class="carousel-container">
+							<div class="carousel-content">
+								<h2>Move into your Dream Home</h2>
+								<p>Add wings to your imagination. Get your dream home.</p>
+								<a href="register" class="btn-get-started scrollto">Apply
+									Now</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<div class="carousel-background">
+							<img
+								src="${pageContext.request.contextPath}/resources/img/intro-carousel/2.jpg"
+								alt="">
+						</div>
+						<div class="carousel-container">
+							<div class="carousel-content">
+								<h2>Turn your dreams into reality</h2>
+								<p>Make your dream home a reality with United Home Loans</p>
+								<a href="register" class="btn-get-started scrollto">Apply
+									Now</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<div class="carousel-background">
+							<img
+								src="${pageContext.request.contextPath}/resources/img/intro-carousel/3.jpg"
+								alt="">
+						</div>
+						<div class="carousel-container">
+							<div class="carousel-content">
+								<h2>24/7 Customer Support</h2>
+								<p>
+									Available for you. Always. <br>24 hours a day, 7 days a
+									week, 365 days a year.
+								</p>
+								<a href="register" class="btn-get-started scrollto">Apply
+									Now</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<div class="carousel-background">
+							<img
+								src="${pageContext.request.contextPath}/resources/img/intro-carousel/4.jpg"
+								alt="">
+						</div>
+						<div class="carousel-container">
+							<div class="carousel-content">
+								<h2>Hassle-free Process</h2>
+								<p>Getting a home loan from United Home Loans is quick and
+									easy.</p>
+								<a href="register" class="btn-get-started scrollto">Apply
+									Now</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<div class="carousel-background">
+							<img
+								src="${pageContext.request.contextPath}/resources/img/intro-carousel/5.jpg"
+								alt="">
+						</div>
+						<div class="carousel-container">
+							<div class="carousel-content">
+								<h2>100% Customer Satisfaction</h2>
+								<p>
+									Going the extra mile for our customers <br> is our
+									commitment.
+								</p>
+								<a href="register" class="btn-get-started scrollto">Apply
+									Now</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<a class="carousel-control-prev" href="#introCarousel" role="button"
+					data-slide="prev"> <span
+					class="carousel-control-prev-icon ion-chevron-left"
+					aria-hidden="true"></span> <span class="sr-only">Previous</span>
+				</a> <a class="carousel-control-next" href="#introCarousel"
+					role="button" data-slide="next"> <span
+					class="carousel-control-next-icon ion-chevron-right"
+					aria-hidden="true"></span> <span class="sr-only">Next</span>
+				</a>
+
+			</div>
+		</div>
+	</section>
+	<!-- #intro -->
+
+	<main id="main"> <!--==========================
+      Featured Services Section
+    ============================-->
+	<section id="featured-services">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-lg-4 box">
+					<i class="ion-ios-bookmarks-outline"></i>
+					<h4 class="title">
+						<a href="">Attractive Interest Rates</a>
+					</h4>
+					<p class="description">Voluptatum deleniti atque corrupti quos
+						dolores et quas molestias excepturi sint occaecati cupiditate non
+						provident</p>
+				</div>
+
+				<div class="col-lg-4 box box-bg">
+					<i class="ion-ios-stopwatch-outline"></i>
+					<h4 class="title">
+						<a href="">Quick Approval</a>
+					</h4>
+					<p class="description">Minim veniam, quis nostrud exercitation
+						ullamco laboris nisi ut aliquip ex ea commodo consequat tarad
+						limino ata</p>
+				</div>
+
+				<div class="col-lg-4 box">
+					<i class="ion-ios-heart-outline"></i>
+					<h4 class="title">
+						<a href="">Customer Satisfaction</a>
+					</h4>
+					<p class="description">Duis aute irure dolor in reprehenderit
+						in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- #featured-services --> <!--==========================
+      About Us Section
+    ============================-->
+	<section id="about">
+		<div class="container">
+
+			<header class="section-header">
+				<h3>About Us</h3>
+				<p>
+					Transforming dreams to build a nation of proud homeowners. <br>
+					For over three decades, United Home Loans has been providing easy
+					access to <br> affordable Housing Finance to realise
+					home-ownership aspirations of <br> millions of Lower and
+					Middle income families in semi-urban and rural India.
+				</p>
+			</header>
+
+			<header class="section-header">
+				<h3>Documents Required For Home Loans</h3>
+			</header>
+			<div class="row about-cols">
+				<div class="col-md-4 wow fadeInUp">
+					<div class="about-col">
+						<div class="img">
+							<img
+								src="${pageContext.request.contextPath}/resources/img/about-mission.jpg"
+								alt="" class="img-fluid">
+							<div class="icon">
+								<i class="ion-android-document"></i>
+							</div>
+						</div>
+						<h2 class="title">
+							<a href="#">KYC Documents</a>
+						</h2>
+						<p>Documents for proof of identity and address such as PAN
+							card, Aadhaar card, Passport etc.</p>
+					</div>
+				</div>
+
+				<div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+					<div class="about-col">
+						<div class="img">
+							<img
+								src="${pageContext.request.contextPath}/resources/img/about-plan.jpg"
+								alt="" class="img-fluid">
+							<div class="icon">
+								<i class="ion-card"></i>
+							</div>
+						</div>
+						<h2 class="title">
+							<a href="#">Income Documents</a>
+						</h2>
+						<p>Financial documents such as your salary slips, latest Form
+							– 16, bank statements, etc.</p>
+					</div>
+				</div>
+
+				<div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+					<div class="about-col">
+						<div class="img">
+							<img
+								src="${pageContext.request.contextPath}/resources/img/about-vision.jpg"
+								alt="" class="img-fluid">
+							<div class="icon">
+								<i class="ion-home"></i>
+							</div>
+						</div>
+						<h2 class="title">
+							<a href="#">Property Documents</a>
+						</h2>
+						<p>Documents such as Agreement to Sale, NOC, etc.</p>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<section id="facts" class="wow fadeIn">
+		<div class="container">
+
+			<header class="section-header">
+				<h3>Facts</h3>
+				<p>We let the numbers do the talking.</p>
+			</header>
+
+			<div class="row counters">
+
+				<div class="col-lg-3 col-6 text-center">
+					<span data-toggle="counter-up">274</span>
+					<p>Clients</p>
+				</div>
+
+				<div class="col-lg-3 col-6 text-center">
+					<span data-toggle="counter-up">421</span>
+					<p>Projects</p>
+				</div>
+
+				<div class="col-lg-3 col-6 text-center">
+					<span data-toggle="counter-up">1,364</span>
+					<p>Hours Of Support</p>
+				</div>
+
+				<div class="col-lg-3 col-6 text-center">
+					<span data-toggle="counter-up">18</span>
+					<p>Hard Workers</p>
+				</div>
+
+			</div>
+
+
+
+		</div>
+	</section>
+	<!-- #facts -->
+
+
+	<section id="testimonials" class="section-bg wow fadeInUp">
+		<div class="container">
+
+			<header class="section-header">
+				<h3>Testimonials</h3>
+			</header>
+
+			<div class="owl-carousel testimonials-carousel">
+
+				<div class="testimonial-item">
+					<img
+						src="${pageContext.request.contextPath}/resources/img/testimonial-1.jpg"
+						class="testimonial-img" alt="">
+					<h3>Saul Goodman</h3>
+					<h4>Ceo &amp; Founder</h4>
+					<p>
+						<img
+							src="${pageContext.request.contextPath}/resources/img/quote-sign-left.png"
+							class="quote-sign-left" alt=""> I am really impressed by
+						United's service as they always try and serve you better. <img
+							src="${pageContext.request.contextPath}/resources/img/quote-sign-right.png"
+							class="quote-sign-right" alt="">
+					</p>
+				</div>
+
+				<div class="testimonial-item">
+					<img
+						src="${pageContext.request.contextPath}/resources/img/testimonial-2.jpg"
+						class="testimonial-img" alt="">
+					<h3>Sara Wilsson</h3>
+					<h4>Designer</h4>
+					<p>
+						<img
+							src="${pageContext.request.contextPath}/resources/img/quote-sign-left.png"
+							class="quote-sign-left" alt=""> I got a loan in the
+						shortest time period and that too without any difficulty. I take
+						pride in owning a home today. <img
+							src="${pageContext.request.contextPath}/resources/img/quote-sign-right.png"
+							class="quote-sign-right" alt="">
+					</p>
+				</div>
+
+				<div class="testimonial-item">
+					<img
+						src="${pageContext.request.contextPath}/resources/img/testimonial-3.jpg"
+						class="testimonial-img" alt="">
+					<h3>Jena Karlis</h3>
+					<h4>Store Owner</h4>
+					<p>
+						<img
+							src="${pageContext.request.contextPath}/resources/img/quote-sign-left.png"
+							class="quote-sign-left" alt=""> Other banks offer a very
+						high interest rate, while United helped me to buy my dream home by
+						providing me a low interest rate. <img
+							src="${pageContext.request.contextPath}/resources/img/quote-sign-right.png"
+							class="quote-sign-right" alt="">
+					</p>
+				</div>
+
+				<div class="testimonial-item">
+					<img
+						src="${pageContext.request.contextPath}/resources/img/testimonial-4.jpg"
+						class="testimonial-img" alt="">
+					<h3>Matt Brandon</h3>
+					<h4>Freelancer</h4>
+					<p>
+						<img
+							src="${pageContext.request.contextPath}/resources/img/quote-sign-left.png"
+							class="quote-sign-left" alt=""> I was very upset with the
+						tedious processes of other banks for a home loan. United
+						sanctioned my loan without any hassles. <img
+							src="${pageContext.request.contextPath}/resources/img/quote-sign-right.png"
+							class="quote-sign-right" alt="">
+					</p>
+				</div>
+
+				<div class="testimonial-item">
+					<img
+						src="${pageContext.request.contextPath}/resources/img/testimonial-5.jpg"
+						class="testimonial-img" alt="">
+					<h3>John Larson</h3>
+					<h4>Entrepreneur</h4>
+					<p>
+						<img
+							src="${pageContext.request.contextPath}/resources/img/quote-sign-left.png"
+							class="quote-sign-left" alt=""> Other banks refused to give
+						me a home loan because I work in an informal sector, United
+						believed in my growth and supported me. <img
+							src="${pageContext.request.contextPath}/resources/img/quote-sign-right.png"
+							class="quote-sign-right" alt="">
+					</p>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+	<!-- #testimonials --> <!--==========================
+      Contact Section
+    ============================-->
+	<section id="contact" class="section-bg wow fadeInUp">
+		<div class="container">
+
+			<div class="section-header">
+				<h3>Contact Us</h3>
+
+			</div>
+
+			<div class="row contact-info">
+
+				<div class="col-md-4">
+					<div class="contact-address">
+						<i class="ion-ios-location-outline"></i>
+						<h3>Address</h3>
+						<address>TTC Electronic Zone, Mahape Road, Navi Mumbai,
+							Maharashtra 400710, India</address>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="contact-phone">
+						<i class="ion-ios-telephone-outline"></i>
+						<h3>Phone Number</h3>
+						<p>
+							<a href="tel:02267954545"> 022 6795 4545</a>
+						</p>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="contact-email">
+						<i class="ion-ios-email-outline"></i>
+						<h3>Email</h3>
+						<p>
+							<a href="mailto:unitedhl@gmail.com">unitedhl@gmail.com</a>
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="form">
+				<div id="sendmessage">Your message has been sent. Thank you!</div>
+				<div id="errormessage"></div>
+				<form action="" method="post" role="form" class="contactForm">
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<input type="text" name="name" class="form-control" id="name"
+								placeholder="Your Name" data-rule="minlen:4"
+								data-msg="Please enter at least 4 chars" />
+							<div class="validation"></div>
+						</div>
+						<div class="form-group col-md-6">
+							<input type="email" class="form-control" name="email" id="email"
+								placeholder="Your Email" data-rule="email"
+								data-msg="Please enter a valid email" />
+							<div class="validation"></div>
+						</div>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" name="subject"
+							id="subject" placeholder="Subject" data-rule="minlen:4"
+							data-msg="Please enter at least 8 chars of subject" />
+						<div class="validation"></div>
+					</div>
+					<div class="form-group">
+						<textarea class="form-control" name="message" rows="5"
+							data-rule="required" data-msg="Please write something for us"
+							placeholder="Message"></textarea>
+						<div class="validation"></div>
+					</div>
+					<div class="text-center">
+						<button type="submit">Send Message</button>
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</section>
+	<!-- #contact --> </main>
+
+	<!--==========================
+    Footer
+  ============================-->
+	<footer id="footer">
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-lg-3 col-md-6 footer-info">
+						<h3>United Home Loans</h3>
+						<p>
+							We are here to guide you on <br>everything you need to know
+							<br>about availing a home loan.
+						</p>
+					</div>
+
+					<div class="col-lg-3 col-md-6 footer-links">
+						<h4>Useful Links</h4>
+						<ul>
+							<li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
+							<li><i class="ion-ios-arrow-right"></i> <a href="#">Calculators</a></li>
+							<li><i class="ion-ios-arrow-right"></i> <a href="#">About
+									Us</a></li>
+							<li><i class="ion-ios-arrow-right"></i> <a href="#">Terms
+									of service</a></li>
+							<li><i class="ion-ios-arrow-right"></i> <a href="oops">Privacy
+									policy</a></li>
+						</ul>
+					</div>
+
+					<div class="col-lg-3 col-md-6 footer-contact">
+						<h4>Contact Us</h4>
+						<p>
+							TTC Electronic Zone, <br> Mahape Road, <br> Navi
+							Mumbai, <br> Maharashtra 400710, <br>India <br> <br>
+							<strong>Phone:</strong> 022 6795 4545<br> <strong>Email:</strong>
+							unitedhl@gmail.com<br>
+						</p>
+
+						<div class="social-links">
+							<a href="#" class="twitter"><i class="fa fa-twitter"></i></a> <a
+								href="#" class="facebook"><i class="fa fa-facebook"></i></a> <a
+								href="#" class="instagram"><i class="fa fa-instagram"></i></a> <a
+								href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+							<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+						</div>
+
+					</div>
+
+					<div class="col-lg-3 col-md-6 footer-newsletter">
+						<h4>Our Newsletter</h4>
+						<p>Subscribe to our Newsletter for regular updates.</p>
+						<form action="" method="post">
+							<input type="email" name="email"><input type="submit"
+								value="Subscribe">
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="copyright">
+				Disclaimer - "As regards deposit taking activity of the company, the
+				viewers may refer to the advertisement in the newspaper /
+				information furnished in the application form for soliciting public
+				deposits; published on June 28, 2018 in the Free Press Journal and
+				in Navshakti, Mumbai, respectively. The Company is having a valid
+				Certificate of Registration dated 31/07/2001 issued by the National
+				Housing Bank under Section 29A of the National Housing Bank Act,
+				1987. However, the National Housing Bank does not accept any
+				responsibility or guarantee about the present position as to the
+				financial soundness of the company or for the correctness of any of
+				the statements or representations made or opinions expressed by the
+				company and for repayment of deposits / discharge of the liabilities
+				by the company." <br> <br> *The information mentioned
+				herein is subject to change without prior notice. <br> Please
+				visit your nearest United branch for detailed information on our
+				various products and changes, if any. Terms and conditions apply. <br>
+				<br> &copy; Copyright <strong>United Home Loans</strong>. All
+				Rights Reserved
+			</div>
+			<div class="credits"></div>
+		</div>
+	</footer>
+	<!-- #footer -->
+
+	<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+	<!-- Uncomment below i you want to use a preloader -->
+	<!-- <div id="preloader"></div> -->
+
+	<!-- JavaScript Libraries -->
+	<script
+		src="${pageContext.request.contextPath}/resources/lib/jquery/jquery.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/lib/jquery/jquery-migrate.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/lib/easing/easing.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/lib/superfish/hoverIntent.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/lib/superfish/superfish.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/lib/wow/wow.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/lib/waypoints/waypoints.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/lib/counterup/counterup.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/lib/owlcarousel/owl.carousel.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/lib/isotope/isotope.pkgd.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/lib/lightbox/js/lightbox.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resources/lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+	<!-- Contact Form JavaScript File -->
+	<script
+		src="${pageContext.request.contextPath}/resources/contactform/contactform.js"></script>
+
+	<!-- Template Main Javascript File -->
+	<script src="${pageContext.request.contextPath}/resources/js/main.js"></script>
+
+</body>
+</html>

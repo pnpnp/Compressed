@@ -1,0 +1,108 @@
+package com.lti.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+@Table
+public class IncomeDetails {
+
+
+	
+	//no sequence created for income...check
+	@Id
+	@GeneratedValue(generator = "income_sequence", strategy = GenerationType.SEQUENCE)
+	@SequenceGenerator(name = "income_sequence", sequenceName = "income_sequence")
+	private int incomeId;	
+
+	@Column
+	private String typeOfEmployment;
+
+	@Column
+	private String retirementAge;
+	
+	@Column
+	private String organizationType;
+	
+	@Column
+	private String employerName;
+	
+	@Column
+	private double salary;
+
+	public IncomeDetails(int incomeId, String typeOfEmployment, String retirementAge, String organizationType,
+			String employerName, double salary) {
+		super();
+		this.incomeId = incomeId;
+		this.typeOfEmployment = typeOfEmployment;
+		this.retirementAge = retirementAge;
+		this.organizationType = organizationType;
+		this.employerName = employerName;
+		this.salary = salary;
+	}
+
+	public IncomeDetails() {
+		super();
+	}
+
+	@Override
+	public String toString() {
+		return "IncomeDetails [incomeId=" + incomeId + ", typeOfEmployment=" + typeOfEmployment + ", retirementAge="
+				+ retirementAge + ", organizationType=" + organizationType + ", employerName=" + employerName
+				+ ", salary=" + salary + "]";
+	}
+
+	public int getIncomeId() {
+		return incomeId;
+	}
+
+	public void setIncomeId(int incomeId) {
+		this.incomeId = incomeId;
+	}
+
+	public String getTypeOfEmployment() {
+		return typeOfEmployment;
+	}
+
+	public void setTypeOfEmployment(String typeOfEmployment) {
+		this.typeOfEmployment = typeOfEmployment;
+	}
+
+	public String getRetirementAge() {
+		return retirementAge;
+	}
+
+	public void setRetirementAge(String retirementAge) {
+		this.retirementAge = retirementAge;
+	}
+
+	public String getOrganizationType() {
+		return organizationType;
+	}
+
+	public void setOrganizationType(String organizationType) {
+		this.organizationType = organizationType;
+	}
+
+	public String getEmployerName() {
+		return employerName;
+	}
+
+	public void setEmployerName(String employerName) {
+		this.employerName = employerName;
+	}
+
+	public double getSalary() {
+		return salary;
+	}
+
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+	
+}

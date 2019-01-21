@@ -1,0 +1,310 @@
+package com.lti.model;
+
+import java.io.Serializable;
+//import java.sql.Date;
+
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+import javax.persistence.Transient;
+
+@Entity
+@Table(name="Customer")
+public class Customer implements Serializable{
+
+	@Id
+	@GeneratedValue( strategy = GenerationType.AUTO)
+
+	
+	 
+	private int customerId;
+	
+	@Column
+	private String customerFirstName;
+	
+	
+	@Column
+	private String customerMiddleName;
+	
+	@Column
+	private String customerLastName;
+
+
+	@OneToOne(cascade = CascadeType.ALL)
+	private Address address;
+
+	
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
+
+
+	
+
+
+	
+
+	
+
+
+	@Column(unique = true)
+	private String emailId;
+	
+
+
+
+
+	
+
+
+
+	@Column
+	private String password;
+	
+	
+	@Transient
+	private String confirmPassword;
+	
+	public String getConfirmPassword() {
+		return confirmPassword;
+	}
+
+	public void setConfirmPassword(String confirmPassword) {
+		this.confirmPassword = confirmPassword;
+	}
+
+
+
+	@Column
+	private String gender;
+
+	@Column
+	private long mobileNo;
+	
+	
+	@Column
+	  public double loanAmount;
+		
+	@Column
+	public double balance;
+
+	
+	@Column
+	private String panNo;
+	
+	@Column
+	private String aadharNo;
+	
+
+
+	
+	@OneToOne(cascade=CascadeType.ALL)
+	private CustomerDetails customerDetails;
+	
+	
+	
+	
+	
+
+	
+	
+	
+	@Column
+	private String birthDate;
+
+
+
+	public String getBirthDate() {
+		return birthDate;
+	}
+
+	public void setBirthDate(String birthDate) {
+		this.birthDate = birthDate;
+	}
+
+	@Column
+	private String country;
+	
+	@Column
+	private String loanStatus;
+	
+	
+	
+	
+	public String getLoanStatus() {
+		return loanStatus;
+	}
+
+	public void setLoanStatus(String loanStatus) {
+		this.loanStatus = loanStatus;
+	}
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+
+
+	public String getCustomerFirstName() {
+		return customerFirstName;
+	}
+
+	public void setCustomerFirstName(String customerFirstName) {
+		this.customerFirstName = customerFirstName;
+	}
+
+	public String getCustomerMiddleName() {
+		return customerMiddleName;
+	}
+
+	public void setCustomerMiddleName(String customerMiddleName) {
+		this.customerMiddleName = customerMiddleName;
+	}
+
+	public String getCustomerLastName() {
+		return customerLastName;
+	}
+
+	public void setCustomerLastName(String customerLastName) {
+		this.customerLastName = customerLastName;
+	}
+
+	public long getMobileNo() {
+		return mobileNo;
+	}
+
+	public void setMobileNo(long mobileNo) {
+		this.mobileNo = mobileNo;
+	}
+
+
+
+	public String getPanNo() {
+		return panNo;
+	}
+
+	public void setPanNo(String panNo) {
+		this.panNo = panNo;
+	}
+
+	public String getAadharNo() {
+		return aadharNo;
+	}
+
+	public void setAadharNo(String aadharNo) {
+		this.aadharNo = aadharNo;
+	}
+
+	public int getCustomerId() {
+		return customerId;
+	}
+
+	public void setCustomerId(int customerId) {
+		this.customerId = customerId;
+	}
+	
+	
+	
+
+	public String getEmailId() {
+		return emailId;
+	}
+
+	public void setEmailId(String emailId) {
+		this.emailId = emailId;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+
+	
+	public Customer() {
+		super();
+	}
+
+	
+
+
+
+	public double getBalance() {
+		return balance;
+	}
+
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+
+	public double getLoanAmount() {
+		return loanAmount;
+	}
+
+	public void setLoanAmount(double loanAmount) {
+		this.loanAmount = loanAmount;
+	}
+
+	public CustomerDetails getCustomerDetails() {
+		return customerDetails;
+	}
+
+	public void setCustomerDetails(CustomerDetails customerDetails) {
+		this.customerDetails = customerDetails;
+	}
+
+	
+	
+
+	
+	@OneToOne( cascade = CascadeType.ALL)
+	private Property property;
+
+
+	public Property getProperty() {
+		return property;
+	}
+
+	public void setProperty(Property property) {
+		this.property = property;
+	}
+
+
+	
+
+	
+
+	
+	
+
+	
+	
+}

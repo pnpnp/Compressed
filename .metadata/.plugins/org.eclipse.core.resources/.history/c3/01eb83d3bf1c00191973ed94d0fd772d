@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="DemoSpringMVC2">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="spring-build-src-4.0.3.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/028SpringHibernateMVC/WebContent/WEB-INF/lib/spring-build-src-4.0.3.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="junit4-4.8.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/028SpringHibernateMVC/WebContent/WEB-INF/lib/junit4-4.8.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-tx-4.0.3.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/028SpringHibernateMVC/WebContent/WEB-INF/lib/spring-tx-4.0.3.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-jms-4.0.3.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/028SpringHibernateMVC/WebContent/WEB-INF/lib/spring-jms-4.0.3.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-webmvc-4.0.3.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/028SpringHibernateMVC/WebContent/WEB-INF/lib/spring-webmvc-4.0.3.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-logging-annotations-1.2.0.Beta1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/028SpringHibernateMVC/WebContent/WEB-INF/lib/jboss-logging-annotations-1.2.0.Beta1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-framework-bom-4.0.3.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/028SpringHibernateMVC/WebContent/WEB-INF/lib/spring-framework-bom-4.0.3.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="DemoSpringMVC2"/>
+        <property name="java-output-path" value="/DemoSpringMVC2/build/classes"/>
+    </wb-module>
+</project-modules>
