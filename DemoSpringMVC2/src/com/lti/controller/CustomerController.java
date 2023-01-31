@@ -52,7 +52,7 @@ public class CustomerController {
 
 	@RequestMapping(value="/listDetails", method=RequestMethod.GET)
 	public String listdetails(Model model) {
-		System.out.println("hi");
+		System.out.println("hi test");
 
 		try
 		{
